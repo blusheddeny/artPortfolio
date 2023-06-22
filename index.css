@@ -15,11 +15,11 @@ html,*{
 }
 @font-face {
     font-family:'Sora-VariableFont_wght';
-    src: url('Sora-VariableFont_wght.ttf');
+    src: url('./Sora-VariableFont_wght.ttf');
 }
 @font-face {
     font-family: 'Updock-Regular';
-    src: url('Updock-Regular.ttf');
+    src: url('./Updock-Regular.ttf');
 }
 nav {
     background: linear-gradient(var(--shadow-color), var(--midtone-color), var(--highlight-color));
