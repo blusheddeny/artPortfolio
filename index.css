@@ -1,0 +1,139 @@
+html,*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /*height: 100%;*/
+}
+:root{
+   --kingColor:#200211;
+    --queenColor:#FAE4E2;
+    --pawnColor:#A80E00;
+    --highlight-color:#FEBBB1;
+    --midtone-color:#CB475D;
+    --shadow-color:#730411;
+    
+}
+@font-face {
+    font-family:'Sora-VariableFont_wght';
+    src: url('Sora-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Updock-Regular';
+    src: url('Updock-Regular.ttf');
+}
+nav {
+    background: linear-gradient(var(--shadow-color), var(--midtone-color), var(--highlight-color));
+    width: 120px;
+    position:fixed;
+    height: 100vh;
+
+}
+span{
+    font-family: 'Updock-Regular';
+    color: var(--queenColor);
+    font-size: 100px;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+nav ul, li,  a{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ul{
+    margin-top: 4rem;
+    
+    height: 30%;
+}
+.link-page{
+    color: var(--queenColor);
+    margin: 1em;
+}
+.link-page:hover{
+    color: var(--kingColor);
+    cursor: pointer;
+}
+li:hover{
+    background: var(--highlight-color);
+    transition:  0.4s ease-in;
+}
+body{
+    display: flex;
+    font-family:'Sora-VariableFont_wght';
+    height: 100vh;
+    overflow-y: hidden;
+    overscroll-behavior-y:none ;
+}
+
+.panoramic-canvas{
+    width:100vw;
+    margin-left: 10vw;
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+img{
+    width:auto;
+    height: 50vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal{
+display:block;
+  padding:2em;
+  backdrop-filter: blur(10px);
+  position:absolute;
+  z-index:999;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+
+    /*position: fixed;
+    transform: translate(25vw,0vh);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    align-items: center;
+    padding: 15rem;*/
+    
+    
+}
+.message{
+    margin:5em;
+    border-radius: 2em;
+    padding:2em;
+    background-color:var(--highlight-color);
+}
+#closebtn{
+    color:var(--pawnColor);
+    background: none;
+    width: 5em;
+    height: 5em;
+    border: none;
+    font-size:1em;
+
+}
+#modalShow{
+    display:none;
+}
+
+
+
+.social-button{
+    width: 30px;
+    height: 30px;
+}
+
