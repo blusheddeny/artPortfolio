@@ -29,7 +29,12 @@ function openContact(){
   const content =  document.getElementById("content")
   content.innerHTML=
   `<h1>Contact</h1>
-  <p>Hit a message and follow me on:</p>
+  <p><a href="https://www.instagram.com/blusheddeny/">Instagram</a></p>
+  <br>
+  <h1>Follow me on</h1>
+  <p><a href="https://www.twitch.tv/blusheddeny">Twitch</a></p>
+  <p><a href="https://www.youtube.com/@blusheddeny">Youtube</a></p>
+  <p><a href="https://www.tiktok.com/@blusheddeny">Tiktok</a></p>  
   `
 modalShow.appendChild(content);
 }
@@ -38,7 +43,7 @@ function openAbout(){
   const content =  document.getElementById("content")
   content.innerHTML=
   `<h1>About</h1>
-  <p>Blusheddeny is an artist that loves drawing pretty girls.</p>
+  <p>Blusheddeny is an artist that loves drawing pretty girls. I use Krita and Autodesk Sketchbook</p>
   `
 modalShow.appendChild(content);
 }
