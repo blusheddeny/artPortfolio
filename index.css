@@ -93,7 +93,7 @@ img{
 display:block;
   padding:2em;
   backdrop-filter: blur(10px);
-  position:absolute;
+  position: fixed;
   z-index:999;
   width:100%;
   height:100%;
